@@ -6,6 +6,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2"
   },
+  "homepage": "https://github.com/lalaiam/library#readme",
   "main": "dist/index.js",
   "private": false,
   "files": [
@@ -14,7 +15,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/LalaIAm/library"
+    "url": "git+https://github.com/LalaIAm/library"
+  },
+  "author": "LalaIAm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LalaIAm/library/issues"
   },
   "scripts": {
     "start": "react-scripts start",
