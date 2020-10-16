@@ -1,0 +1,77 @@
+import {Story, Canvas, Meta, ArgsTable} from '@storybook/addon-docs/blocks'
+import Button from './Button.js';
+
+<Meta title="Library/Button" component={Button} />
+
+export const Template = (args) => <Button {...args} />
+
+# Button
+
+> The most basic form of user interaction.
+
+## Basic Buttons
+
+<Canvas>
+    <Story name="primary" args={{
+        appearance: "primary",
+        children: "primary"
+    }}>
+    {Template.bind({})}
+    </Story>
+    <Story name="secondary" args={{
+        appearance: "secondary",
+        children: "secondary"
+    }}>
+    {Template.bind({})}
+    </Story>
+    <Story name="outlined" args={{
+        appearance: "outlined",
+        children: "outlined"
+    }}>
+    {Template.bind({})}
+    </Story>
+</Canvas>
+
+<ArgsTable of={Button} />
+
+## Button sizes
+
+Buttons also come in three different sizes. 
+
+<Canvas> 
+    <Story name="small" args={{
+        size:"small",
+        children:"small",
+        appearance: "primary"
+    }}>
+    {Template.bind({})}
+    </Story>
+    <Story name="medium" args={{
+        children: 'medium'
+    }}>
+    {Template.bind({})}
+    </Story>
+    <Story name="large" args={{
+        size: 'large',
+        children: 'Large'
+    }}>
+    {Template.bind({})}
+    </Story>
+</Canvas>
+
+## Disabled and Loading Buttons
+
+<Canvas>
+    <Story name="disabled" args={{
+        disabled: true,
+        children: 'disabled'
+    }}>
+    {Template.bind({})}
+    </Story>
+    <Story name="loading" args={{
+        loading: true,
+        children: 'Loading'
+    }}>
+    {Template.bind({})}
+    </Story>
+</Canvas>

@@ -1,0 +1,15 @@
+:root {
+    --blkHaze: #f4f6f5;
+    --rollingStone: #7a7f85;
+    --euntry: #daa29e;
+    --nightShadz: #b43b51;
+    --steelGray: #2b2339;
+}
+
+body {
+    font-family: 'Open Sans'
+}
+
+input {
+    font-family: 'Open Sans'
+}
